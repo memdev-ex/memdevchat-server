@@ -1,6 +1,8 @@
 #node, npm...
 FROM node:alpine
 
+RUN apkg install security-fix-package
+
 #directory for our app
 WORKDIR /memdevchat-server
 
